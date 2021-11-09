@@ -1,0 +1,25 @@
+/*EJERCICIOS 3 DE NOVIEMBRE DEL 2021
+ISRAEL FRANCISCO ANGELES MONTIJO
+PROGRAMACION EN C*/
+#include<stdio.h>
+main()
+{
+float eurosdev;
+int faltadev;
+int m50cen,m20cen,m10cen,m5cen;
+printf("EUROS A DEVOLVER:");
+scanf("%f",&eurosdev);
+faltadev=eurosdev*100.0;
+m50cen=faltadev/50;
+faltadev=faltadev-50*m50cen;
+m20cen=faltadev/20;
+faltadev=faltadev-20*m20cen;
+m10cen=faltadev/10;
+faltadev=faltadev-10*m10cen;
+m5cen=faltadev/5;
+printf("LA CANTIDAD DE %f EUROS SE DEVOLVERA ASI:\n",eurosdev);
+printf("--%d MONEDAS DE 50C\n",m50cen);
+printf("--%d MONEDAS DE 20C\n",m20cen);
+printf("--%d MONEDAS DE 10C\n",m10cen);
+printf("--%d MONEDAS DE 5C\n",m5cen);	
+}
